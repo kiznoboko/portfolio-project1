@@ -1,0 +1,146 @@
+/* -------- Base -------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.highlight { color: #ff6b2c; }
+
+/* -------- Navbar -------- */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.logo { font-size: 1.5rem; font-weight: 700; color:#ff6b2c;}
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav a { text-decoration: none; color: #222; font-weight: 600; }
+nav a.active, nav a:hover { color: #ff6b2c; }
+
+/* -------- Hero -------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.hero-text h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero-text .sub { font-weight: 600; margin-bottom: 2rem; }
+.btn-group { display: flex; gap: 1rem; }
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border: 2px solid #ff6b2c;
+  text-decoration: none;
+  color: #ff6b2c;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all .3s;
+}
+.btn.primary {
+  background: #ff6b2c;
+  color: #fff;
+}
+.btn:hover { transform: translateY(-2px); }
+
+/* -------- Sections -------- */
+.services, .hire-me, .testimonials {
+  background: #f8f8f8;
+  padding: 4rem 0;
+}
+.experience, .portfolio, .blog {
+  padding: 4rem 0;
+}
+.grid-3, .grid-2 {
+  display: grid;
+  gap: 2rem;
+}
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.card img { width: 100%; border-radius: 12px; margin-bottom: 1rem; }
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  border-left: 3px solid #ff6b2c;
+  padding-left: 1.5rem;
+}
+.timeline li {
+  margin-bottom: 1.5rem;
+}
+.timeline .date { font-size: 0.9rem; color: #666; display: block; }
+
+/* Hire */
+.hire-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hire-text { max-width: 50%; }
+.hire-img img { border-radius: 12px; }
+
+/* Testimonials */
+.testimonials blockquote {
+  background: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #ff6b2c;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #aaa;
+  padding: 2rem 0;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------- Desktop Only -------- */
+@media (max-width: 1023px) {
+  body::before {
+    content: "Desktop layout only. Please view on larger screen.";
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    background: #ffefef;
+    color: #b00;
+  }
+  body > *:not(body::before) {
+    display: none;
+  }
+}
