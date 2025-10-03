@@ -100,7 +100,7 @@ nav {
 
 }
 
-/* .section-1 {
+.section-1 {
      position: relative;
     width: 100%;
     height: 100%;
@@ -108,37 +108,36 @@ nav {
     
     
 
-} */
+} 
 
-/* Base styles for the section */
-.section-1 {
-    background-color: black;
+
+ .section-1 {
+    background-color: white;
     position: relative;
     width: 100%;
-    height: 100vh; /* Or set your desired height */
+    height: 100vh; 
     background-image: url("./image_assets/section2_backgorund.png");
-    background-size: cover; /* Ensure the entire image is visible without distortion */
-    /* background-position: left center; Start with the background aligned to the left */
-    transition: background-position 2s ease-in-out; /* Smooth transition for the background movement */
+    background-size: cover; 
+    transition: background-image 2s ease-in-out; 
 }
 
-/* Hover effect for the image */
+
 .hireme-image {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    transition: transform 4s ease-in-out; /* Optional: Smooth transition for the image */
+    transition: transform 4s ease-in-out; 
 }
 
-/* Change background direction from left to right on hover */
 .section-1:hover {
-    background-image: url("./image_assets/section2_backgorund-reverted.png"); /* Move background from left to right */
+    background-image: url("./image_assets/section2_backgorund-reverted.png"); 
 }
 
-/* Change background direction from right to left on hover (back to initial state) */
+
 .section-1:not(:hover) {
-    background-image: url("./image_assets/section2_backgorund.png"); /* Move background back from right to left */
+    background-image: url("./image_assets/section2_backgorund.png"); 
 }
+
 
 
 .section1-main {
@@ -149,13 +148,16 @@ nav {
 }
 
 .section-1-main-image {
+    /* border: 1px solid black; */
     /* background-color: white; */
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    top: 30%;
+    left: 25%;
 }
 
 .hireme-section1 {
