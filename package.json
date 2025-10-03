@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server -c-1 -o index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiznoboko/portfolio-project1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiznoboko/portfolio-project1/issues"
+  },
+  "homepage": "https://github.com/kiznoboko/portfolio-project1#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

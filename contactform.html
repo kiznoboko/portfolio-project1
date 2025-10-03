@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen" />
+  <title>Contact Form</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <fieldset>
+      <legend>Contact form</legend>
+      <form action="https://send.pageclip.co/gq1KGSDfH49nSI7nHWxygcpDTa0DnsWI/contactform" class="pageclip-form" method="post">
+        
+        <div class="form-group">
+          <label for="full-name" class="form-label">Full name:</label>
+          <input id="full-name" name="fullName" type="text" class="form-control" placeholder="full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">email:</label>
+          <input id="email" name="email" type="email" class="form-control" placeholder="contact email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">phone number:</label>
+          <input id="phone" name="phone" type="tel" class="form-control" placeholder="contact phone number" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="form-label">Contact subject (main idea):</label>
+          <textarea id="subject" name="subject" class="form-control" rows="2" placeholder="contact subject"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="overview" class="form-label">Contact overview (project details):</label>
+          <textarea id="overview" name="overview" class="form-control" rows="4" placeholder="subject details"></textarea>
+        </div>
+
+        <button type="submit" class="submit-form">Submit</button>
+
+      </form>
+    </fieldset>
+  </div>
+
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+</body>
+</html>
+
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: none; */
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.wrapper {
+    padding: 5px 5px;
+    /* border: 1px dashed red; */
+    width: 90%;
+    min-height: 100%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    
+
+}
+
+fieldset {
+  width: 500px;
+  min-height: 70%;
+
+
+}
+
+legend {
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px 5px;
+
+}
+.form-group {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.form-label {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+
+}
+
+.form-control {
+    text-align: start;
+    padding: 5px 5px;
+    width: 200px;
+    height: 45px;
+}
+
+.submit-form {
+  border: none;
+  width: 70px;
+  height: 20px;
+
+}
+
+.submit-form:hover {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+</style>
