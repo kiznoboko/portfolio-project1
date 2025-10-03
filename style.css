@@ -741,8 +741,10 @@ nav {
 
 
 .Section5_part2_project_overview_images {
+    padding: 5px 5px;
+    border: 1px dashed black;
     cursor: pointer;
-    width: 30%;
+    max-width: 300px;
     height: 25%;
 }
 
@@ -867,13 +869,13 @@ nav {
 
 @keyframes flicker {
     0% {
-        background-color: #ff0000; /* Red background */
+        background-color: grey; /* Red background */
     }
     50% {
-        background-color: #00ff00; /* Green background */
+        background-color: #E7F2EF; /* Green background */
     }
     100% {
-        background-color: #0000ff; /* Blue background */
+        background-color: #EEEEEE; /* Blue background */
     }
 }
 
@@ -920,7 +922,7 @@ nav {
     width: 100%;
     height: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
@@ -942,7 +944,7 @@ nav {
 
 .section6-imageContainer {
     width: 100%;
-    min-height: 200px;
+    height: auto;
     /* background-image: url("./section7-testimonials.png");
     background-repeat: repeat-x;
     background-position: center; */
@@ -1148,7 +1150,7 @@ nav {
 
 /* footer */
 
-footer {
+/* footer {
     background-color: black;
     color: white;
     width: 100%;
@@ -1163,7 +1165,7 @@ footer {
 .footer-parts {
     border: 1px solid white;
     padding: 10px 10px;
-    width: 85%;
+    width: 90%;
     height: 30%;
     display: flex;
     justify-content: center;
@@ -1172,6 +1174,55 @@ footer {
     gap: 5px; 
     border-bottom: 1px solid white;
 
+} */
+
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 10%; /* Changed to 10vh for more reasonable height scaling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-direction: column;
+}
+
+/* Container for footer parts */
+.footer-parts {
+    border: 1px solid white;
+    padding: 10px 10px;
+    width: 90%;
+    height: 100%; /* Ensures the footer parts container takes full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    border-bottom: 1px solid white;
+}
+
+/* Footer Box Container */
+.footer-container2 {
+    display: flex; 
+    justify-content: space-around; /* Space out the boxes horizontally */
+    align-items: stretch; /* Ensure all boxes take the full height of the container */
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling individual boxes inside footer */
+.fC-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 22%; /* You can adjust these widths based on how many items you want */
+    height: 100%; /* Ensure all boxes take full height */
+    /* border: 1px solid white; */
+    /* gap: 10px; */
 }
 
 .footerC1-image {
@@ -1261,7 +1312,7 @@ footer {
 } */
 
 
-.footer-container2 {
+/* .footer-container2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1273,21 +1324,29 @@ footer {
     align-items: center;
     border: 1px solid white;
     display: flex;
-    flex-direction: column; /* Column layout for all the boxes */
-    height: 100%; /* Ensure all boxes take full height */
-}
+    flex-direction: column; 
+    height: 1000%;
+    
+} */
 
-.fC-box1 {
-    width: 35%; /* 40% width for the first box */
+/* .fC-box1 {
+    width: 35%; 
     padding: 10px;
     height: 100%
 }
 
-.fC-box2, .fC-box3, .fC-box4 {
-    width: 30%; /* 20% width for the other boxes */
+.fC-box2 {
+    width: 30%; 
     padding: 10px;
-    height: 100%
+    min-height: 100%
+
 }
+.fC-box3, 
+.fC-box4 {
+    width: 30%; 
+    padding: 10px;
+    min-height: 100%
+} */
 
 .FC-box1-mediaconnect {
     display: flex;
@@ -1311,6 +1370,7 @@ footer {
     height: 100%;
     list-style: none;
     text-align: start;
+    cursor: pointer;
 }
 
 
@@ -1326,3 +1386,16 @@ footer {
     cursor: pointer;
 }
 
+.FC-box4-subscribe {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} 
+
+.FC-box4-image {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
