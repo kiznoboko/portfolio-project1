@@ -100,14 +100,46 @@ nav {
 
 }
 
-.section-1 {
+/* .section-1 {
      position: relative;
     width: 100%;
     height: 100%;
+    background-image: url("./image_assets/section2_backgorund.png");
     
     
 
+} */
+
+/* Base styles for the section */
+.section-1 {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Or set your desired height */
+    background-image: url("./image_assets/section2_backgorund.png");
+    background-size: cover; /* Ensure the entire image is visible without distortion */
+    /* background-position: left center; Start with the background aligned to the left */
+    transition: background-position 2s ease-in-out; /* Smooth transition for the background movement */
 }
+
+/* Hover effect for the image */
+.hireme-image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 4s ease-in-out; /* Optional: Smooth transition for the image */
+}
+
+/* Change background direction from left to right on hover */
+.section-1:hover {
+    background-image: url("./image_assets/section2_backgorund-reverted.png"); /* Move background from left to right */
+}
+
+/* Change background direction from right to left on hover (back to initial state) */
+.section-1:not(:hover) {
+    background-image: url("./image_assets/section2_backgorund.png"); /* Move background back from right to left */
+}
+
 
 .section1-main {
    
@@ -134,13 +166,14 @@ nav {
     bottom: 50px;
 }
 
-.hireme-image {
+/* .hireme-image {
     
     width: 100%;
     height: 100%;
     cursor: pointer;
     transform: 4s ease-in-out infinite;
-}
+} */
+
 
 .hireme-image:hover {
     border: 1px dashed orange;
@@ -691,6 +724,7 @@ nav {
     border-radius: 50px;
     background-color: orange;
     color: white;
+    cursor: pointer;
 }
 
 .section5-part2 {
@@ -755,7 +789,7 @@ nav {
 
 }
 
-.section5-part4 {
+/* .section5-part4 {
     width: 100%;
 
     height: auto;
@@ -773,7 +807,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    /* gap: 5px; */
+    
      
 }
 
@@ -786,6 +820,58 @@ nav {
     color: white;
     text-align: center;
     cursor: pointer;
+} */
+ .section5-part4 {
+    width: 100%;
+    overflow: hidden; /* Hides content that overflows the container */
+    position: relative;
+}
+
+.section5-part4-project-list {
+    display: flex; /* Make the list items appear in a row */
+    justify-content: space-between;
+    animation: scroll-left 10s linear infinite; /* Apply the scrolling animation */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.section5-part4lists {
+    padding: 10px 20px; /* Space between items */
+    white-space: nowrap; /* Prevents text from wrapping */
+    padding: 5px 5px;
+    min-width: 120px;
+    border-radius: 50px;
+    border: none;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    animation: flicker 1s infinite alternate;
+    
+    
+}
+
+/* Define the scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start at the right edge */
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll to the left edge */
+    }
+}
+
+
+@keyframes flicker {
+    0% {
+        background-color: #ff0000; /* Red background */
+    }
+    50% {
+        background-color: #00ff00; /* Green background */
+    }
+    100% {
+        background-color: #0000ff; /* Blue background */
+    }
 }
 
 .section5-part5 {
@@ -1088,9 +1174,7 @@ footer {
     cursor: pointer;
 }
 
-.FC-box1-image {
-    cursor: pointer;
-}
+
 .footer-container1 {
     width: 100%;
     display: flex;
@@ -1103,6 +1187,11 @@ footer {
     width: 100px;
     height: 60px;
 } */
+
+
+/* .FC-box1-image {
+    cursor: pointer;
+}
 .mdediaConnect-lists, .FC-box2-navlists, .FC-box3-navlists {
     list-style: none;
 
@@ -1132,8 +1221,8 @@ footer {
 
 
 .footer-container2{
-    width: 30;
-    height: 40%;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -1147,6 +1236,7 @@ footer {
 .fC-box {
     border: 1px solid white;
     height: 100%;
+   
 
 }
 
@@ -1156,6 +1246,7 @@ footer {
 
 .fC-box2, .fC-box3,  .fC-box4 {
     width:20%;
+    height: 100%;
 }
 
 .FC-box4-subscribe {
@@ -1163,7 +1254,61 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+} */
+
+
+.footer-container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
+
+.fC-box {
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column; /* Column layout for all the boxes */
+    height: 100%; /* Ensure all boxes take full height */
+}
+
+.fC-box1 {
+    width: 35%; /* 40% width for the first box */
+    padding: 10px;
+    height: 100%
+}
+
+.fC-box2, .fC-box3, .fC-box4 {
+    width: 30%; /* 20% width for the other boxes */
+    padding: 10px;
+    height: 100%
+}
+
+.FC-box1-mediaconnect {
+    display: flex;
+    justify-content: space-around; /* Space out the social media links */
+}
+
+.mdediaConnect-lists {
+    display: flex; /* Row layout for social media */
+    gap: 10px; /* Gap between the items */
+    list-style: none;
+    padding: 0;
+}
+
+.mdediaConnect-lists .list-mediaconnect {
+    text-align: center;
+}
+
+
+.FCbox-lists {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-align: start;
+}
+
 
 
 .footer-container3 {
