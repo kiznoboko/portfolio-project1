@@ -92,7 +92,7 @@ nav {
     /* flex-wrap: wrap; */
     border: 1px solid green;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,13 +176,14 @@ nav {
 } */
 
 
-.section-2 {
+/* .section-2 {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    /* flex-wrap: wrap; */
+    
 }
 
 .section2-part1 {
@@ -191,7 +192,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    /* border: 1px solid black; */
+   
 }
 
 .section-2-part1-items {
@@ -214,32 +215,162 @@ nav {
 
 .section2-part1-paragraphs {
     word-break: keep-all;
-}
+} */
 
 
-.section2-part2 {
+/* .section2-part2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    border: 1px solid black;
+    border: 1px solid red;
     height: 70%;
     width: 100%;
     
-}
+} */
 
-.section2-box {
-    width: 20%;
+/* .section2-box {
+    width: 30%;
     height: 100%;
-    border: 1px solid black;
+    border: 1px dashed blue;
     
+} */
+
+/* .section2-box {
+    width: 30%;
+    height: 100%;
+    background-color: #f4f4f4;  
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* .section2-box-image {
+    width: 100%;
+    height: 100%;
+} */
+
+
+
+
+/* .section2-box-lists {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* Section 2 Container */
+.section-2 {
+    width: 100%;
+    height: 100vh; /* Use viewport height for the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the sections */
+    gap: 15px;
+    padding: 30px 0; /* Add padding for spacing */
 }
 
-.section2-box-image {
+/* First part of section 2 (title and description) */
+.section2-part1 {
+    height: 30%;  /* Takes up 30% of the height of .section-2 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px; /* Padding to add some spacing on sides */
+}
+
+/* Flex container for individual items in part 1 */
+.section-2-part1-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
 
+/* Title of section 2 */
+.section-2-part1-item1 {
+    width: 35%;
+    height: 100%;
+}
+
+/* Description of section 2 */
+.section-2-part1-item2 {
+    width: 60%;
+    height: 100%;
+    font-size: 1.1em; /* Slightly larger font for better readability */
+    line-height: 1.6;  /* Better line spacing */
+}
+
+/* Paragraph text styling */
+.section2-part1-paragraphs {
+    word-break: keep-all;
+    margin-top: 10px;  /* Adds space between paragraphs */
+}
+
+/* Main container for section 2 items (service boxes) */
+.section2-part2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures child boxes stretch vertically */
+    flex-direction: row;
+    gap: 15px;  /* Adds consistent gap between the boxes */
+    width: 100%;
+    height: 70%;  /* Takes up 70% of the height of .section-2 */
+    padding: 0 20px;
+    border: none;  /* Removed border from part2 */
+}
+
+/* Each individual service box */
+.section2-box {
+    width: 15%;
+    height: 100%; /* Ensure each box takes up full height of section2-part2 */
+    background-color: #f4f4f4;  /* Light background for each box */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a more modern look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Slight shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+     /* Allow the box to grow and fill available space */
+        gap: 20px;
+    }
+
+.section2-box:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+/* Styling for the service box list (such as features) */
+.section2-box-lists {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5; /* Improve readability */
+    color: #333; /* Darker text for readability */
+}
+
+/* List items (service details) */
+.section2-box-lists li {
+    margin: 8px 0; /* Adds space between list items */
+}
+
+/* Optional - Optional image inside boxes if needed */
+.section2-box-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adds some spacing between the image and list */
+}
+
+/* section3 */
 
 .section-3 {
     display: flex;
@@ -256,6 +387,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 10px;
 }
 
 .section3-part1 {
@@ -280,11 +412,12 @@ nav {
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    cursor: pointer;
 }
 
 
 .section3-part2COntainer{
-   width: 1px;
+    width: 1px;
     border: 1px dashed  grey;
      display: flex;
     justify-content: center;
@@ -325,6 +458,7 @@ nav {
     padding: 5px 5px;
 }
 
+
 .section3-part2-cercle1 {
     background-color: orange;
     border: 1px dashed black;
@@ -341,8 +475,143 @@ nav {
     background-color: orange;
      border: 1px dashed black;
     
+} 
+
+.section3-parts-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
+.section3-details-item {
+    width: 100%;
+    text-align: start;
+}
+
+.section4-date-items {
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+}
+
+/* section 3 remake */
+
+/* Section 3 Container */
+/* .section-3 {
+    width: 100%;
+    padding: 30px 0;
+}
+
+
+#about-container h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+.section3-partsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.section3-part1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.section3-part1-box {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  
+}
+
+
+.section3-item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.section3-item-dates {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.section3-part2 {
+    border: 1px solid black;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    
+}
+
+.section3-part2-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    width: 100%;
+    
+    height: 5px;
+    border: 1px solid black;
+}
+
+.section3-part2-box {
+   
+    position: relative;
+    border: 1px dashed black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px 15px;
+    
+}
+
+
+
+
+
+.section3-part3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.section3-part3 .section3-part1-box {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+} */
+
+/* section4 */
 
 .section-4 {
     background-color: azure;
