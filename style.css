@@ -744,8 +744,9 @@ nav {
     padding: 5px 5px;
     border: 1px dashed black;
     cursor: pointer;
-    max-width: 300px;
+    width: 300px;
     height: 25%;
+    border-radius: 8px;
 }
 
 
