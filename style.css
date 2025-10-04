@@ -650,7 +650,8 @@ nav {
 /* section4 */
 
 .section-4 {
-    background-color: azure;
+    border-radius: 50px;
+    background-color: #506F86;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -662,6 +663,14 @@ nav {
     width: 30%;
     height: 80%;
     border: 1px solid black;
+
+}
+
+.section4-part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
 .section4-image {
@@ -669,12 +678,38 @@ nav {
     height: 100%;
 }
 
+.section4-part1-paragraph {
+    font-weight: bold;
+    color: white;
+}
+
+.status {
+    width: 15px;
+    height: 15px;
+    background-color: #699c78;
+    border-radius: 5px;
+}
+
 .section4-part2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    color: white;
+    
+}
 
+.section4-part2-title {
+    color: black;
+    font-size: 50px;
+    line-height: 30px;
+}
+
+.stare-img {
+    width: 20px;
+    height: 20px;
+    background-color: goldenrod;
+    border-radius: 50px;
 }
 
 .section4-part2-whyhireme {
