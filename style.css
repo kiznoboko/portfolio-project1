@@ -772,15 +772,30 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    background-color: ;
 }
 
+.section5-part2-box {
+    border: 1px solid black;
+    width: 15%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.section5-part2-box1 {
+    /* border: 1px dashed white; */
+}
 
 .Section5_part2_project_overview_images {
     padding: 5px 5px;
     border: 1px dashed black;
     cursor: pointer;
-    width: 300px;
-    height: 25%;
+    width: 100%;
+    height: 150px;
     border-radius: 8px;
 }
 
@@ -1004,6 +1019,8 @@ nav {
 /* section7  */
 
 .section-7 {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1025,20 +1042,76 @@ nav {
     border: 1px solid black;
     border: none;
     padding: 5px 5px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     display: flex;
-    width: 60%;
+    width: 80%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
 }
 
 .section7-part2-form {
-    width: 100%;
+    width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    flex-direction: column;
 
 }
+
+.section7-part2-form-group-container1 {
+    border: 1px dashed yellow;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.form-group {
+    width: 100%;
+    height: 100%; 
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-label {
+    width: 100px;
+    /* border: 1px solid black; */
+    font-weight: bold;
+}
+
+.form-control {
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px 5px;
+}
+
+.form-control-message {
+    max-width: 350px;
+    max-height: 200px;
+    border-radius: 10px;
+    text-align: start;
+    padding: 15px 15px;
+    word-break: break-all;
+}
+
+.contact-us-btn {
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 5px;
+    
+}
+
 
 .section7-part2-img {
     width: 50px;
